@@ -1,0 +1,18 @@
+#MAC Spoofing
+# This attack basically change the MAC address of the device target
+# Also, you can use this attack to impersonate target's computer identity.
+# Here goes Man in the Middle Attack 
+
+#disable the interface
+sudo ifconfig eth0 down
+
+#change the MAC address
+#you can change the MAC address whatever you want. btw "hw" means hardware #interface
+sudo ifconfig eth0 hw ether 00:11:22:33:44:55
+
+#enable interface
+sudo ifconfig eth0 up
+
+#fyi. This attack can be counter using MAC Locking
+
+
