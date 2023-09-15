@@ -1,0 +1,41 @@
+#macchanger command simply change your mac address either random or specified
+
+#you can use the comman "man macchanger" for more info
+
+#Here are some of the commands you can use in macchanger
+#But, check if macchanger is available in you OS. Just type "which macchanger"
+
+#Now, to change MAC address randomly
+
+ifconfig
+
+sudo ifconfig eth0 down
+
+sudo macchanger -r eth0
+
+sudo ifconfig etho0 up
+
+#Done! To check you can type
+
+sudo macchanger -s eth0
+
+#To reset MAC address
+
+sudo ifconfig eth0 down
+
+sudo macchanger -p eth0
+
+sudo ifconfig etho0 up
+
+#To set specified MAC address 
+
+sudo ifconfig eth0 down
+
+sudo macchanger -m eth0
+
+sudo ifconfig etho0 up
+
+#And that is it!
+
+
+ 
